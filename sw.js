@@ -1,18 +1,9 @@
 
-const CACHE_NAME = 'rebrote-v3';
-// Usamos rutas relativas para máxima compatibilidad con hosting
+const CACHE_NAME = 'rebrote-v4';
 const PRECACHE_ASSETS = [
   './',
   './index.html',
-  './manifest.json',
-  './index.tsx',
-  './App.tsx',
-  './types.ts',
-  './screens/ConfigScreen.tsx',
-  './screens/PlayersScreen.tsx',
-  './screens/BracketScreen.tsx',
-  './screens/ReportScreen.tsx',
-  './screens/HistoryScreen.tsx'
+  './manifest.json'
 ];
 
 self.addEventListener('install', (event) => {
