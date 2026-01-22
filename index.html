@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#0a0f14">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="./manifest.json">
     <title>Torneos Rebrote</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -59,7 +59,6 @@
             animation: fade-in 0.4s ease-out forwards;
         }
 
-        /* ESTILOS DE IMPRESIÓN MEJORADOS */
         @media print {
             html, body {
                 background: white !important;
@@ -67,63 +66,33 @@
                 height: auto !important;
                 overflow: visible !important;
             }
-            #root, .max-w-\[480px\] {
+            #root {
                 max-width: 100% !important;
                 width: 100% !important;
                 height: auto !important;
-                overflow: visible !important;
                 position: static !important;
-                transform: none !important;
             }
-            nav, button, .no-print, header button, .fixed {
+            nav, button, .no-print {
                 display: none !important;
-            }
-            .bg-background-dark, .bg-card-dark {
-                background: white !important;
-                border: 1px solid #eee !important;
-                color: black !important;
-                box-shadow: none !important;
-            }
-            .text-white, .text-primary, .text-accent-green {
-                color: black !important;
-            }
-            .text-gray-400, .text-gray-500, .text-gray-600 {
-                color: #666 !important;
-            }
-            .border-white\/5, .border-white\/10 {
-                border-color: #eee !important;
-            }
-            main {
-                padding: 0 !important;
-                overflow: visible !important;
-                height: auto !important;
-            }
-            .rounded-3xl, .rounded-2xl, .rounded-xl {
-                border-radius: 4px !important;
-            }
-            .sticky {
-                position: static !important;
-            }
-            /* Asegurar que las imágenes de los jugadores se vean en el PDF */
-            img {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
             }
         }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/"
-  }
-}
-</script>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom": "https://esm.sh/react-dom@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/"
+      }
+    }
+    </script>
 <link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-background-dark text-white">
     <div id="root"></div>
+    <!-- Carga del punto de entrada principal -->
+    <script type="module" src="./index.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

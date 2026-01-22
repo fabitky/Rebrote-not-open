@@ -1,31 +1,23 @@
 
 # 🏓 Torneos Rebrote - Guía de Despliegue
 
-¡Tu aplicación está lista para el mundo real! Aquí tienes cómo ponerla online de forma permanente y gratuita para usarla en tu club.
+## ⚠️ ¿Por qué ves la pantalla en negro?
+GitHub Pages es un servidor de archivos "estáticos". No sabe qué hacer con los archivos `.tsx` (React/TypeScript). Para que funcione, necesitas una plataforma que "construya" el proyecto.
 
-## Opción 1: Vercel (Recomendado - La más rápida)
-Vercel es ideal para este tipo de aplicaciones modernas.
+## 🚀 La solución: Desplegar en Vercel (Recomendado)
+Vercel es gratuito y está diseñado para aplicaciones de React como esta.
 
-1. Ve a [Vercel.com](https://vercel.com) e inicia sesión con tu cuenta de GitHub.
-2. Haz clic en **"Add New"** > **"Project"**.
-3. Importa tu repositorio de GitHub donde subiste estos archivos.
+1. Ve a [Vercel.com](https://vercel.com) e inicia sesión con tu GitHub.
+2. Haz clic en **"Add New Project"**.
+3. Selecciona tu repositorio de Torneos Rebrote.
 4. Haz clic en **"Deploy"**.
-5. ¡Listo! Te dará una URL privada (ej: `mi-torneo.vercel.app`) que puedes compartir por WhatsApp con los otros jugadores.
+5. ¡Listo! Vercel te dará un enlace (ej: `mis-torneos.vercel.app`) que funcionará perfectamente en tu móvil.
 
-## Opción 2: GitHub Pages
-Si prefieres usar solo GitHub:
-
-1. Sube todos los archivos a un repositorio en GitHub.
-2. Ve a la pestaña **Settings** (Configuración) de tu repositorio.
-3. En el menú de la izquierda, entra en **Pages**.
-4. En "Build and deployment", selecciona la rama `main` (o la que uses) y la carpeta `/(root)`.
-5. Haz clic en **Save**.
-6. Espera 1 minuto y aparecerá tu enlace oficial.
-
-## Cómo instalarla en tu móvil:
-Una vez que entres a TU PROPIA URL desde el móvil:
-- **iPhone (Safari)**: Pulsa el icono de "Compartir" (cuadrado con flecha arriba) y elige **"Añadir a la pantalla de inicio"**.
-- **Android (Chrome)**: Pulsa los tres puntos de arriba a la derecha y elige **"Instalar aplicación"**.
+## 📱 Cómo instalarla como App
+Una vez tengas tu link de Vercel:
+1. Ábrelo en Safari (iPhone) o Chrome (Android).
+2. Selecciona **"Añadir a pantalla de inicio"**.
+3. Ahora tendrás el icono de Rebrote en tu móvil y funcionará incluso sin internet.
 
 ---
-*💡 Nota técnica: Los datos se guardan en el almacenamiento local de tu teléfono (LocalStorage). No necesitas base de datos.*
+*Nota: He incluido un archivo `package.json` para que Vercel sepa automáticamente cómo preparar tu aplicación.*
