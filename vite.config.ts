@@ -8,6 +8,7 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    target: 'esnext'
+    target: 'esnext',
+    minify: 'esbuild'
   }
 });
