@@ -1,0 +1,7 @@
+{
+  "name": "Torneos Rebrote",
+  "description": "Una plataforma integral para la gestión de torneos de tenis de mesa, que incluye configuración, registro de jugadores, seguimiento en vivo e informes de resultados con un diseño moderno y minimalista.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
