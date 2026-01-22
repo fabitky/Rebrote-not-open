@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Screen } from './types';
 import ConfigScreen from './screens/ConfigScreen';
@@ -40,7 +39,6 @@ const AppContent: React.FC = () => {
       {renderScreen()}
       <Navbar currentScreen={currentScreen} onNavigate={setScreen} />
       
-      {/* Visual background accents */}
       <div className="fixed bottom-0 left-0 right-0 h-1.5 flex pointer-events-none z-[60]">
         <div className="flex-1 bg-pingpong-red"></div>
         <div className="flex-1 bg-primary"></div>
